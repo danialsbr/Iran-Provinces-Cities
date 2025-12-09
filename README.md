@@ -1,40 +1,85 @@
-# Iran-Provinces-Cities
-لیست تمام استان ها و شهر های ایران 
+# Iran Provinces & Cities - ایران استان‌ها و شهرها 🇮🇷
 
+<div align="center">
 
-آذربایجان شرقی - 168 cities
-آذربایجان غربی - 169 cities
-اردبیل - 64 cities
-اصفهان - 264 cities
-البرز - 25 cities
-ایلام - 56 cities
-بوشهر - 51 cities
-تهران - 117 cities
-چهارمحال و بختیاری - 58 cities
-خراسان جنوبی - 38 cities
-خراسان رضوی - 210 cities
-خراسان شمالی - 31 cities
-خوزستان - 149 cities
-زنجان - 48 cities
-سمنان - 93 cities
-سیستان و بلوچستان - 122 cities
-فارس - 195 cities
-قزوین - 53 cities
-قم - 12 cities
-کردستان - 63 cities
-کرمان - 125 cities
-کرمانشاه - 64 cities
-کهگیلویه و بویراحمد - 32 cities
-گلستان - 42 cities
-گیلان - 18 cities
-لرستان - 69 cities
-مازندران - 156 cities
-مرکزی - 102 cities
-هرمزگان - 79 cities
-همدان - 67 cities
-یزد - 43 cities
-Total: 31 provinces, 2,942 cities
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![JSON Database](https://img.shields.io/badge/Data-JSON-brightgreen)](https://raw.githubusercontent.com/yourusername/Iran-Provinces-Cities/main/iran-cities.json)
+[![Cities Count](https://img.shields.io/badge/Cities-2%2C942%2B-orange)](#)
+[![Provinces](https://img.shields.io/badge/Provinces-31-blue)](#)
 
-A comprehensive JSON database of all 31 provinces and 2,942+ cities of Iran. Perfect for web forms, mobile apps, and geographic data applications.
+</div>
 
-پایگاه داده جامع JSON از تمام ۳۱ استان و ۲۹۴۲+ شهر ایران. مناسب برای فرم‌های وب، اپلیکیشن‌های موبایل و برنامه‌های داده‌های جغرافیایی.
+<h2 align="center">لیست تمام استان ها و شهر های ایران </h2>
+
+A complete and up-to-date JSON database containing all **31 provinces** and **2,942+ cities** of Iran with Persian names.
+
+Perfect for:
+- Web forms (dropdown selects)
+- Mobile applications
+- Location-based services
+- Administrative division lookups
+- Data visualization & mapping
+
+---
+
+### آمار کلی / Summary
+
+| Province (استان)             | Cities (شهرها) | 
+|-------------------------------|-----------------|
+| آذربایجان شرقی                 | 168             |
+| آذربایجان غربی                 | 169             |
+| اردبیل                         | 64              |
+| اصفهان                         | 264             |
+| البرز                          | 25              |
+| ایلام                          | 56              |
+| بوشهر                          | 51              |
+| تهران                          | 117             |
+| چهارمحال و بختیاری             | 58              |
+| خراسان جنوبی                   | 38              |
+| 
+| خراسان رضوی                    | 210             |
+| خراسان شمالی                   | 31              |
+| خوزستان                        | 149             |
+| زنجان                          | 48              |
+| سمنان                          | 93              |
+| سیستان و بلوچستان              | 122             |
+| فارس                           | 195             |
+| قزوین                          | 53              |
+| قم                            | 12              |
+| کردستان                        | 63              |
+| کرمان                          | 125             |
+| کرمانشاه                       | 64              |
+| کهگیلویه و بویراحمد            | 32              |
+| گلستان                         | 42              |
+| گیلان                          | 18              |
+| لرستان                         | 69              |
+| مازندران                       | 156             |
+| مرکزی                          | 102             |
+| هرمزگان                        | 79              |
+| همدان                          | 67              |
+| یزد                            | 43              |
+
+**Total: 31 provinces · 2,942+ cities**
+
+---
+
+### فایل‌ها / Files
+
+- `iran-cities.json` → Full list with province → cities structure
+- `iran-provinces.json` → Only provinces (optional lightweight version)
+- `iran-cities-flat.json` → Flat array of all cities with province info (great for search/filter)
+
+---
+
+### مثال استفاده / Usage Example (JavaScript)
+
+```js
+fetch('fetch('https://raw.githubusercontent.com/danialsbr/Iran-Provinces-Cities/main/iran-cities.json')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data["تهران"]); // → ["تهران", "ری", "شمیرانات", ...]
+  });')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data["تهران"]); // → ["تهران", "ری", "شمیرانات", ...]
+  });
